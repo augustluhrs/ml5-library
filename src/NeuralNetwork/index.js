@@ -24,6 +24,7 @@ class NeuralNetwork {
    */
   constructor(options, callback) {
     // model config
+    console.log("hello!");
     this.config = {
       // debugging
       debug: options.debug || DEFAULTS.debug,
@@ -122,6 +123,11 @@ class NeuralNetwork {
 
       this.ready = true;
     }
+  }
+
+
+  mutate() {
+    console.log(this.model);
   }
 
   /**
